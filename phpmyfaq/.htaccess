@@ -1,3 +1,7 @@
+###############################################
+# O HTACCESS DEVE ESTAR NA ROOT DO SISTEMA, ABAIXO DE DASH
+###############################################
+
 ##
 # phpMyFAQ .htaccess file for Apache 2.x
 #
@@ -35,7 +39,7 @@ RewriteEngine On
 </IfModule>
 
 # the path to your phpMyFAQ installation
-RewriteBase /
+RewriteBase /dash/faq
 
 # Error pages
 #ErrorDocument 404 /index.php?action=404

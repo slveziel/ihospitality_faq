@@ -30,7 +30,7 @@
  *
  * @var string
  */
-const DATETIME_TIMEZONE_DEFAULT = 'Europe/Berlin';
+const DATETIME_TIMEZONE_DEFAULT = 'America/Sao_Paulo';
 
 //
 // Set the default timezone used by all date/time functions

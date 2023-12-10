@@ -15,6 +15,9 @@
  * @since 2006-04-05
  * @codingStandardsIgnoreFile
  */
+$PMF_LANG['msgGoToCategory'] = 'Ir para categoria';
+
+
 
 $PMF_LANG['metaCharset'] = 'utf-8';
 $PMF_LANG['metaLanguage'] = 'pt-BR';

@@ -77,7 +77,7 @@ class System
         'curl',
         'fileinfo',
         'filter',
-        'gd',
+        //'gd',
         'json',
         'sodium',
         'xml',

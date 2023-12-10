@@ -57,10 +57,7 @@ if (!defined('IS_VALID_PHPMYFAQ')) {
             <div class="container-fluid px-4">
                 <div class="d-flex align-items-center justify-content-between small">
                     <div class="text-muted">
-                        Proudly <?= System::getPoweredByString() ?> |
-                        <a target="_blank" class="text-decoration-none" href="https://en.isupportukraine.eu/trombinoscope">
-                            #StandWithUkraine
-                        </a>
+                        Proudly <?= System::getPoweredByString() ?>
                     </div>
                     <div>
                         <a target="_blank" rel="noopener" href="<?= System::getDocumentationUrl() ?>">

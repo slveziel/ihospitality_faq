@@ -164,6 +164,23 @@ if ($token !== '' && $userid !== '') {
     }
 }
 
+$dashAdminName = $_SESSION['admin_name'] ?? null;
+$autologinDashUsers = explode(',', $faqConfig->get('security.autoLoginFromDash'));
+$autologinDashUserId = explode(',', $faqConfig->get('security.autoLoginFromDashMatchNameId'));
+if(in_array($dashAdminName, $autologinDashUsers)) {
+    foreach($autologinDashUserId as $userAndId) {
+        list($name, $id) = explode(':', $userAndId);
+
+        if($name != $dashAdminName) {
+            continue;
+        }
+
+        $user = new CurrentUser($faqConfig);
+        $user->getUserById($id);
+        $user->twoFactorSuccess();
+    }
+}
+
 if (!isset($user)) {
     $user = new CurrentUser($faqConfig);
 }

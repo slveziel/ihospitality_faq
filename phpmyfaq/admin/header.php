@@ -238,12 +238,24 @@ switch ($action) {
 
 <!-- phpMyFAQ Admin Top Bar -->
 <nav class="pmf-admin-topnav navbar navbar-expand navbar-dark bg-dark">
-    <a class="navbar-brand ps-3" href="../">phpMyFAQ <?= System::getVersion() ?></a>
+    <a class="navbar-brand ps-3" href="../">FAQ iHospitality <? System::getVersion() ?></a>
 
     <?php if ($user->isLoggedIn() && ((is_countable($user->perm->getAllUserRights($user->getUserId())) ? count($user->perm->getAllUserRights($user->getUserId())) : 0) || $user->isSuperAdmin())): ?>
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
         <i class="fa fa-bars"></i>
     </button>
+
+    <ul class="nav me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li>
+            <div class="text-white-50 small">
+                <a href="/dash/" class="btn">
+                    <img src="../assets/themes/default/img/logo.png" height="30" />
+                    <span class="text-white-50">Ir para o dash</span>
+                </a>
+
+            </div>
+        </li>
+    </ul>
 
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
         <li>
