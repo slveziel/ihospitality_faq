@@ -1,8 +1,8 @@
 <?php
-$DB['server'] = '127.0.0.1';
+$DB['server'] = 'ihospitality-origin.comets.com.br';
 $DB['port'] = '3306';
-$DB['user'] = 'root';
-$DB['password'] = '123a45b';
+$DB['user'] = 'ihospitality_aws';
+$DB['password'] = 'e6Fv920j%';
 $DB['db'] = 'ihospitality_faq';
 $DB['prefix'] = '';
 $DB['type'] = 'mysqli';
