@@ -120,6 +120,7 @@ class UrlMatcher implements UrlMatcherInterface, RequestMatcherInterface
      */
     protected function matchCollection(string $pathinfo, RouteCollection $routes): array
     {
+        $pathinfo = str_replace('/dash/faq/admin/api', '', $pathinfo);
         // HEAD and GET are equivalent as per RFC
         if ('HEAD' === $method = $this->context->getMethod()) {
             $method = 'GET';
