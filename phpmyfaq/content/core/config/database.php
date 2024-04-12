@@ -1,5 +1,5 @@
 <?php
-$DB['server'] = 'ihospitality-origin.comets.com.br';
+$DB['server'] = 'ihospitality.ddns.net';
 $DB['port'] = '3306';
 $DB['user'] = 'ihospitality_aws';
 $DB['password'] = 'e6Fv920j%';
