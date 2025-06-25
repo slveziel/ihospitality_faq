@@ -1,5 +1,5 @@
 <?php
-$DB['server'] = 'ihospitality-admin.cluster-cimut7x4nxvh.us-east-1.rds.amazonaws.com';
+$DB['server'] = 'mysql01.infinityhospitality.com.br';
 $DB['port'] = '3306';
 $DB['user'] = 'ihospitality_aws';
 $DB['password'] = 'e6Fv920j%';
